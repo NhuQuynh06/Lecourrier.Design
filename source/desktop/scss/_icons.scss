@@ -1,0 +1,30 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+    font-size: 0 !important;
+}
+
+.icon {
+    &-home {
+        background: url(../img/icon-home.png) center center/21px no-repeat;
+    }
+
+    &-more {
+        background: url(../img/icon-more.png) center center/19px no-repeat;
+    }
+
+    &-search {
+        margin-left: 20px;
+        background: url(../img/icon-search.png) center center/15px no-repeat;
+    }
+
+    &-photo {
+        background: url(../img/icon-photo.png) rgba(0, 0, 0, 0.7) center center/32px no-repeat;
+    }
+
+    &-play {
+        background: url(../img/icon-play.png) rgba(0, 0, 0, 0.7) center center/11px no-repeat;
+    }
+}

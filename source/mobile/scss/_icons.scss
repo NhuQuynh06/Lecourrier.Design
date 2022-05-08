@@ -1,0 +1,12 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+.icon {
+    &-search {
+        background: url(../img/icon-search.png) center center/16.5px no-repeat;
+    }
+}
