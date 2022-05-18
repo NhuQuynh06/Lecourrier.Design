@@ -1,5 +1,10 @@
 // Playfair Display
 
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf');
+    font-weight: 600;
+}
 
 // Quicksand
 @font-face {
@@ -8,17 +13,10 @@
     font-weight: 400;
 }
 
-
 @font-face {
     font-family: 'Quicksand';
     src: url('../fonts/Quicksand/Quicksand-Medium.ttf');
     font-weight: 500;
-}
-
-@font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf');
-    font-weight: 600;
 }
 
 @font-face {

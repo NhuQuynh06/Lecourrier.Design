@@ -7,24 +7,13 @@
 }
 
 .icon {
-    &-home {
-        background: url(../img/icon-home.png) center center/21px no-repeat;
-    }
-
-    &-more {
-        background: url(../img/icon-more.png) center center/19px no-repeat;
-    }
-
     &-search {
-        margin-left: 20px;
+        margin-right: 8px;
         background: url(../img/icon-search.png) center center/15px no-repeat;
     }
 
-    &-photo {
-        background: url(../img/icon-photo.png) rgba(0, 0, 0, 0.7) center center/32px no-repeat;
-    }
-
-    &-play {
-        background: url(../img/icon-play.png) rgba(0, 0, 0, 0.7) center center/11px no-repeat;
+    &-user {
+        margin-right: 8px;
+        background: url(../img/icon-user.png) center center/13px no-repeat;
     }
 }
