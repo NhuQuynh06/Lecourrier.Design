@@ -20,3 +20,20 @@
         width: 198px;
     }
 }
+
+.zone-1 {
+    display: flex;
+    justify-content: space-between;
+
+    .non-tab {
+        width: 231px;
+    }
+
+    .pri-tab {
+        width: 693px;
+    }
+
+    .third-tab {
+        width: 297px;
+    }
+}
