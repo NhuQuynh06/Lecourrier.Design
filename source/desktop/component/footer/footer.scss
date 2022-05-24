@@ -1,28 +1,91 @@
 .page-footer {
-    background: #BD1723;
+    padding-top: 24px;
+    padding-bottom: 52px;
+    background: #E82335;
     box-shadow: inset 0px 1px 0px #EEEEEE;
-    padding: 52px 0;
-    text-align: center;
-    margin-top: 33px;
 
-    .logo-footer {
-        margin: 0 auto;
-        font-size: 0;
-        height: 80px;
-        width: 330px;
-        background: url(../img/vnlaw-logo-footer.png) center center/330px no-repeat;
-    }
+    .cate-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
 
-    .text-wrapper {
-        margin-top: 30px;
+        li {
+            &:first-child {
+                a::before {
+                    display: none;
+                }
+            }
+        }
 
-        >* {
+        a {
             font-family: 'Quicksand';
             font-weight: $font-weight-medium;
-            font-size: 16px;
+            font-size: 24px;
             line-height: 30px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 0 20px;
+            display: block;
+            position: relative;
+            transform: 0.5s;
+
+            &:hover {
+                color: #ddd;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 20px;
+                border-left: 1px solid #fff;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .pri-wrapper {
+        text-align: center;
+        width: 430px;
+        margin-right: 70px;
+
+        .text {
+            font-family: 'Quicksand';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
             text-align: center;
             color: #FFFFFF;
         }
+    }
+
+    .second-wrapper {
+        >* {
+            font-family: 'Quicksand';
+            font-weight: $font-weight-medium;
+            font-size: 20px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+    }
+
+    .bold {
+        font-weight: $font-weight-bold;
+    }
+
+    .logo-footer {
+        width: 270px;
+        font-size: 0;
+        filter: brightness(0) invert(1);
+        height: 91px;
+        background: url(../img/lecourrier-logo.png) center center/270px no-repeat;
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 }

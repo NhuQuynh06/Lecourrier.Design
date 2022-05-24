@@ -29,21 +29,23 @@
         display: flex;
         align-items: center;
 
-        li {
-            &:last-child {
-                a {
-                    padding: 13px 0 13px 12px;
-                }
-            }
-        }
+        // li {
+        //     &:last-child {
+        //         a {
+        //             padding: 13px 0 13px 12px;
+        //         }
+        //     }
+        // }
 
         a {
             display: flex;
             align-items: center;
-            padding: 6px 12px;
+            padding: 18px 12px;
+            height: 34px;
+            transition: 0.5s;
 
             &:hover {
-                color: #D03927;
+                background: #fff;
             }
         }
     }
@@ -52,6 +54,30 @@
 .logo-wrapper {
     background: url(../img/bg-header.png) center center/100% no-repeat;
     height: 150px;
+
+    .container {
+        height: 150px;
+        align-items: end;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: 0;
+        margin: 0;
+
+        .text {
+            padding: 9px 13px;
+            font-family: 'Quicksand';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;
+            max-width: 95px;
+            display: block;
+        }
+    }
 
 }
 
@@ -78,9 +104,10 @@
 
 // style menu
 .menu-wrapper {
-    margin-top: 8px;
+    padding-top: 8px;
     background: #fff;
     z-index: 9999;
+    border-top: 2px solid #D03927;
 
     .menu {
         position: relative;
@@ -116,11 +143,11 @@
 
         a {
             font-family: "Quicksand";
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            color: #000;
-            height: 30px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 20px;
+            color: #d03927;
+            height: 25px;
             display: flex;
             align-items: center;
             padding: 0 16px;
@@ -130,7 +157,7 @@
     .sub-menu {
         display: none;
         position: absolute;
-        top: 29px;
+        top: 25px;
         width: 150px;
         background: $white;
         z-index: 9999;

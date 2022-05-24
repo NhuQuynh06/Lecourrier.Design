@@ -16,4 +16,13 @@
         margin-right: 8px;
         background: url(../img/icon-user.png) center center/13px no-repeat;
     }
+
+    &-home {
+        background: url(../img/icon-home.png) center center/23px no-repeat;
+    }
+
+    &-chevron-down {
+        width: 18px;
+        background: url(../img/chevron-down.png) center center/9px no-repeat;
+    }
 }

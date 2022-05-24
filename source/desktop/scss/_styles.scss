@@ -43,3 +43,129 @@ body {
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.abf-homepage {
+  .rank-1 {
+    .story {
+      &__thumb {
+        width: 759px;
+        height: 410px;
+        margin-top: 12px;
+      }
+
+      &__heading a {
+        font-family: 'Playfair Display';
+        font-weight: $font-weight-semibold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #212529;
+      }
+
+      &__time {
+        padding-top: 12px;
+        font-family: 'Quicksand';
+        font-weight: $font-weight-normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ADB5BD;
+      }
+
+      &__summary {
+        font-family: 'Quicksand';
+        font-weight: $font-weight-normal;
+        font-size: 15px;
+        line-height: 21px;
+        color: #212529;
+        margin-top: 4px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      .story {
+        width: 231px;
+
+        &__thumb {
+          width: 100%;
+          height: 148px;
+        }
+
+        &__heading a {
+          font-family: 'NotoSerif';
+          font-weight: $font-weight-semibold;
+          font-size: 15px;
+          line-height: 22px;
+          color: #212529;
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+
+  .rank-2 {
+    .story {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #E9ECEF;
+
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      &__thumb {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: 16px;
+      }
+
+      &__heading a {
+        font-family: 'NotoSerif';
+        font-weight: $font-weight-semibold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #212529;
+        // limit line
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .rank-3 {
+    >* {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.three-pack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+
+  >* {
+    padding: 16px;
+    background: #CEEAFB;
+    width: 407px;
+    height: 164px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
