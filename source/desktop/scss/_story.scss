@@ -30,15 +30,15 @@
             overflow: hidden;
 
             img {
-                -webkit-transform: scale($rate-zoom);
+                // -webkit-transform: scale($rate-zoom);
                 /* Safari and Chrome */
-                -moz-transform: scale($rate-zoom);
+                // -moz-transform: scale($rate-zoom);
                 /* Firefox */
-                -ms-transform: scale($rate-zoom);
+                // -ms-transform: scale($rate-zoom);
                 /* IE 9 */
-                -o-transform: scale($rate-zoom);
+                // -o-transform: scale($rate-zoom);
                 /* Opera */
-                transform: scale($rate-zoom);
+                // transform: scale($rate-zoom);
             }
         }
 

@@ -25,4 +25,16 @@
         width: 18px;
         background: url(../img/chevron-down.png) center center/9px no-repeat;
     }
+
+    &-longform {
+        background: #fff url(../img/icon-longform.png) center center/16px no-repeat !important;
+    }
+
+    &-play {
+        background: #fff url(../img/icon-play.png) center center/16px no-repeat !important;
+    }
+
+    &-mic {
+        background: #fff url(../img/icon-mic.png) center center/10px no-repeat !important;
+    }
 }

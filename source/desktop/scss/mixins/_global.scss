@@ -11,3 +11,16 @@
         right: 0;
     }
 }
+
+@mixin heading {
+    font-family: 'Newsreader Display';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -.02em;
+    color: #bd1723;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    padding-right: 16px;
+}

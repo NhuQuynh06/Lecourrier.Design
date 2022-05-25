@@ -1,8 +1,10 @@
-$('.box-tips .box-content').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    dots: true,
+$(document).ready(function () {
+    $('.one-main-four-sub .box-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        dots: true,
+    });
 });
