@@ -931,3 +931,37 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.slide-wrapper {
+  margin-top: 54px;
+  background: #F8F9FA;
+  padding: 56px 0 48px;
+
+  .heading {
+    font-family: 'Newsreader';
+    font-weight: $font-weight-bold;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  .box-content {
+    margin-top: 18px;
+  }
+
+  .item-wrapper {}
+
+  .story {
+    &__thumb {
+      width: 957px;
+      height: 618px;
+    }
+
+    &__heading a {
+      opacity: 0;
+    }
+
+    &__summary {}
+  }
+}

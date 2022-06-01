@@ -7,4 +7,14 @@ $(document).ready(function () {
         autoplay: true,
         dots: true,
     });
+
+    $('.slide-wrapper .box-content').slick({
+        centerMode: true,
+        // centerPadding: '432px',
+        centerPadding: '473px',
+        slidesToShow: 1,
+        focusOnSelect: true,
+        dots: false,
+        infinite: true,
+    });
 });
