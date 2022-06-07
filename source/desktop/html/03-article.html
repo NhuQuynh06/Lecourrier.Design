@@ -20,14 +20,12 @@
     <!-- site header -->
     @@include('../component/header/header.html')
     <!-- site body -->
-    <div class="site-body cate-page">
+    <div class="site-body article-page">
       <div class="container">
         <!-- code -->
-        <div class="cate-breadcrumb">
-          <a class="cate-parent" href="">
-            NEWS
-          </a>
-        </div>
+        <ul class="breadcrumb-wrapper">
+          <li><a href="" class="active">Politique</a></li>
+        </ul>
         <div class="col-wrapper">
           <div class="main-col">
             <div class="article">
@@ -38,7 +36,7 @@
                 Overseas Vietnamese invest USD 1.72 billion in Vietnam in 2021
               </div>
               <div class="article__meta">
-                <time class="time">Friday, 17/09/2021 - 11:16</time>
+                <time class="time">Vendredi 17 septembre 2021 - 11:16</time>
                 <iframe
                   src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=150&layout=button_count&action=like&size=small&share=true&height=46&appId"
                   width="150" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
@@ -63,8 +61,7 @@
                 </div>
                 <div class="right"> <span> <button class="select-voice" data-toggle="dropdown"
                       id="bm-player-dropdownbtn" aria-haspopup="true" aria-expanded="false"> <i
-                        class="fi-microphone-alt"></i> <span>Nam miền
-                        Bắc</span> </button>
+                        class="fi-microphone-alt"></i> <span>North domain</span> </button>
                     <div class="dropdown-menu bm-dropdown-menu voice-board" aria-labelledby="bm-player-dropdownbtn">
                       <ul>
                         <li class="is-active">
@@ -91,8 +88,8 @@
                     </div>
                   </span> <button class="close-player"></button> </div>
               </div>
-              <div class="article__sapo">By the end of 2021, overseas Vietnamese in 29 countries and territories had
-                invested in 376 projects in Vietnam with a total investment of USD 1.72 billion.
+              <div class="article__sapo">Le Premier ministre Pham Minh Chinh, en tournée dans la province de Binh Phuoc
+                (Sud), est allé dimanche 20 mars inspecter les chantiers de certaines routes dans la province
               </div>
               <div class="article__body">
                 <table class="picture">
@@ -103,9 +100,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="caption">The projects have been invested in 42 out of 63 cities and provinces, mainly
-                        focusing on manufacturing and processing. In addition, overseas Vietnamese have also invested in
-                        Vietnam through other indirect channels.</td>
+                      <td class="caption">Le Premier ministre Pham Minh Chinh, lors de séance de travail avec les
+                        dirigeants de la province de Binh Phuoc, le 20 mars.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -155,13 +151,13 @@
                 <table class="picture" align="left">
                   <tbody>
                     <tr>
-                      <td class="pic"><a class="photo" href="#"><img class="" src="../figurations/300x200.png"></a>
+                      <td class="pic"><a class="photo" href="#"><img class=""
+                            src="https://images.pexels.com/photos/3689659/pexels-photo-3689659.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></a>
                       </td>
                     </tr>
                     <tr>
-                      <td class="caption">The projects have been invested in 42 out of 63 cities and provinces, mainly
-                        focusing on manufacturing and processing. In addition, overseas Vietnamese have also invested in
-                        Vietnam through other indirect channels.</td>
+                      <td class="caption">Le Premier ministre Pham Minh Chinh, lors de séance de travail avec les
+                        dirigeants de la province de Binh Phuoc, le 20 mars.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -184,13 +180,13 @@
                 <table class="picture" align="right">
                   <tbody>
                     <tr>
-                      <td class="pic"><a class="photo" href="#"><img class="" src="../figurations/300x200.png"></a>
+                      <td class="pic"><a class="photo" href="#"><img class=""
+                            src="https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></a>
                       </td>
                     </tr>
                     <tr>
-                      <td class="caption">The projects have been invested in 42 out of 63 cities and provinces, mainly
-                        focusing on manufacturing and processing. In addition, overseas Vietnamese have also invested in
-                        Vietnam through other indirect channels.</td>
+                      <td class="caption">Le Premier ministre Pham Minh Chinh, lors de séance de travail avec les
+                        dirigeants de la province de Binh Phuoc, le 20 mars.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -626,7 +622,7 @@
               <div class="box-comment">
                 <div class="box-heading">
                   <h3 class="wrap-heading">
-                    <a href="#" class="heading">Send Us Your Comments:</a>
+                    <a href="#" class="heading">Réagir à cet article</a>
                   </h3>
                 </div>
 
@@ -634,7 +630,7 @@
                   <div class="wrap-comment">
                     <textarea rows="5" placeholder="Content comment ..."></textarea>
                     <div class="w-100 mt-3 d-flex justify-content-end">
-                      <button class="btnSubmit" data-toggle="modal" data-target="#modalUserInfo">send</button>
+                      <button class="btnSubmit" data-toggle="modal" data-target="#modalUserInfo">envoyer</button>
                     </div>
                   </div>
                   <div class="user">
@@ -653,7 +649,7 @@
                         <div class="reply  action-comment-reply"><textarea rows="5" class="form-control"
                             comment-parent="518158">@User name: </textarea>
                           <div class="w-100 mt-3 d-flex">
-                            <button class="btn-Submit" data-toggle="modal" data-target="#modalUserInfo">Send</button>
+                            <button class="btn-Submit" data-toggle="modal" data-target="#modalUserInfo">envoyer</button>
                           </div>
                         </div>
                         <p></p>
@@ -712,7 +708,7 @@
                               <textarea rows="5"></textarea>
                               <div class="w-100 mt-3 d-flex">
                                 <button class="btn-Submit" data-toggle="modal"
-                                  data-target="#modalUserInfo">Send</button>
+                                  data-target="#modalUserInfo">envoyer</button>
                               </div>
                             </div>
                           </div>
@@ -720,13 +716,13 @@
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="btn btn-link btn-lg mt-3">show more</button>
+                  <button type="button" class="btn btn-link btn-lg mt-3">Suite</button>
                 </div>
               </div>
               <div class="see-also">
                 <div class="box-heading">
                   <h3 class="wrap-heading">
-                    <a href="" class="heading">See also</a>
+                    <a href="" class="heading">Les autres articles</a>
                   </h3>
                 </div>
                 <div class="box-content">
@@ -783,65 +779,6 @@
             </div>
           </div>
           <div class="sub-col">
-            <div class="box-picture">
-              <img src="../figurations/img-01.png" alt="">
-            </div>
-            <div class="publications">
-              <div class="box-heading">
-                <h3 class="wrap-heading">
-                  <a href="" class="heading">Publications</a>
-                </h3>
-              </div>
-              <div class="box-content">
-                <article class="story">
-                  <figure class="story__thumb">
-                    <a href="" title=""> <img src="../figurations/80x110.png" alt=""></a>
-                  </figure>
-                  <h5 class="story__heading">
-                    <a href="#">
-                      The Law on Enterprises was passed on November 26th, 2014, by the XIIIth National Assembly of the
-                      Socialist Republic of Vietnam
-                    </a>
-                  </h5>
-                </article>
-                <article class="story">
-                  <figure class="story__thumb">
-                    <a href="" title=""> <img src="../figurations/80x110.png" alt=""></a>
-                  </figure>
-                  <h5 class="story__heading">
-                    <a href="#">
-                      The Law on Enterprises was passed on November 26th, 2014, by the XIIIth National Assembly of the
-                      Socialist Republic of Vietnam
-                    </a>
-                  </h5>
-                </article>
-                <article class="story">
-                  <figure class="story__thumb">
-                    <a href="" title=""> <img src="../figurations/80x110.png" alt=""></a>
-                  </figure>
-                  <h5 class="story__heading">
-                    <a href="#">
-                      The Law on Enterprises was passed on November 26th, 2014, by the XIIIth National Assembly of the
-                      Socialist Republic of Vietnam
-                    </a>
-                  </h5>
-                </article>
-                <article class="story">
-                  <figure class="story__thumb">
-                    <a href="" title=""> <img src="../figurations/80x110.png" alt=""></a>
-                  </figure>
-                  <h5 class="story__heading">
-                    <a href="#">
-                      The Law on Enterprises was passed on November 26th, 2014, by the XIIIth National Assembly of the
-                      Socialist Republic of Vietnam
-                    </a>
-                  </h5>
-                </article>
-              </div>
-            </div>
-            <div class="box-picture">
-              <img src="../figurations/img-02.png" alt="">
-            </div>
             <div class="banner">
               <img src="../figurations/banner_02.png" alt="">
             </div>

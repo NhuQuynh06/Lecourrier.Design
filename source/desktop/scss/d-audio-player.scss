@@ -15,9 +15,6 @@
 @import "../scss/bootstrap-4.1.2/scss/mixins";
 @import "../scss/bootstrap-4.1.2/scss/utilities/clearfix";
 
-@mixin Roboto {
-    font-family: 'Roboto';
-}
 
 @keyframes spin {
     0% {
@@ -136,7 +133,7 @@
 
     .time-display {
         width: 70px;
-        @include Roboto();
+
     }
 
     .progress-bar {
@@ -187,8 +184,10 @@
         padding: 0 20px 0 13px;
 
         span {
+            font-weight: $font-weight-semibold;
             font-size: 15px;
-            @include Roboto();
+            line-height: 19px;
+            color: #495057;
         }
 
         i {

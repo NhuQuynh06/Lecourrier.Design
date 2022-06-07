@@ -66,18 +66,19 @@
         }
 
         .caption {
-            font-family: 'Quicksand';
-            font-weight: $font-weight-medium;
+            font-family: 'NotoSerif';
+            font-style: italic;
+            font-weight: 400;
             font-size: 14px;
             line-height: 20px;
-            text-align: right;
-            color: #343A40;
+            text-align: center;
+            color: #0D6EFD;
             margin-top: 8px;
             display: block;
         }
 
         &[align="left"] {
-            width: 297px;
+            width: 50%;
             float: left;
             margin-right: 32px;
             margin-top: 1.6rem !important;
@@ -90,20 +91,19 @@
 
         &[align="right"] {
             float: right;
-            width: 297px;
+            width: 50%;
             margin-left: 32px;
-            // margin-right: calc(50% - 477px) !important;
             margin-top: 1.6rem !important;
             margin-left: 1.6rem !important;
 
             .caption {
-                text-align: left;
+                text-align: right;
             }
         }
 
         &[align="center"] {
             text-align: center;
-            max-width: 659px;
+            max-width: 50%;
         }
 
         &.full-width {
@@ -200,10 +200,11 @@
         position: relative;
         z-index: 0;
         background: #ffffff;
-        border: 2px solid $primary;
+        border: 2px solid #238063;
         box-sizing: border-box;
         padding: 36px 24px;
         margin-top: 30px !important;
+        border-radius: 10px;
 
         &::before {
             content: "";
@@ -213,14 +214,6 @@
             width: 60px;
             height: 45px;
             left: 15px;
-        }
-
-        p {
-
-            font-style: italic;
-            font-weight: $font-weight-normal;
-            font-size: 17px;
-            line-height: 165%;
         }
 
         .author {
@@ -308,12 +301,10 @@
     }
 
     .notebox {
-        background: #9EEAF9;
+        background: #A6E9D5;
         border: 1px solid rgba(163, 207, 187, 0.5);
         padding: 36px;
-        text-align: left;
-        margin-top: $spacer-3 !important;
-        overflow: auto;
+
 
         .heading {
             font-weight: $font-weight-bold;
@@ -329,9 +320,6 @@
         }
 
         p {
-            font-weight: normal;
-            font-size: 17px;
-            line-height: 165%;
             margin: 0 !important;
 
             &:first-child {
@@ -400,9 +388,10 @@
     }
 
     &__title {
-        font-weight: $font-weight-bold;
-        font-size: 32px;
-        line-height: 150%;
+        font-family: 'PlayfairDisplay';
+        font-weight: $font-weight-semibold;
+        font-size: 36px;
+        line-height: 44px;
         color: #212529;
     }
 
@@ -425,8 +414,7 @@
         }
 
         .time {
-            font-family: 'Quicksand';
-            font-weight: $font-weight-medium;
+            font-weight: $font-weight-semibold;
             font-size: 16px;
             line-height: 20px;
             color: #6C757D;
@@ -714,7 +702,7 @@
                 padding: 4px 8px;
 
 
-                font-weight: $font-weight-normal;
+                font-weight: 600;
                 font-size: 13px;
                 line-height: 160%;
                 color: #212529;
@@ -832,12 +820,11 @@
         font-weight: $font-weight-bold;
         font-size: 17px;
         line-height: 165%;
-        color: $primary;
         padding: 25px 23px 22px;
         text-align: left;
         margin-bottom: 16px;
         margin-left: 6px;
-        border: 2px solid $primary;
+        border: 2px solid #238063;
         width: 100%;
 
         &[align="right"] {
@@ -864,7 +851,7 @@
                 font-size: 20px;
                 line-height: 25px;
                 text-transform: uppercase;
-                color: $primary;
+                color: #238063;
             }
         }
 
@@ -901,7 +888,7 @@
             margin-top: 20px;
 
             .btn-send {
-                background: $primary;
+                background: #238063;
                 border-radius: 3px;
                 width: 100px;
                 height: 28px;
@@ -938,9 +925,10 @@
     &__body {
         >* {
             margin-top: 16px !important;
-            font-weight: normal;
-            font-size: 16px;
+            font-weight: 500;
+            font-size: 18px;
             line-height: 28px;
+            color: #212529;
 
             &:first-child {
                 margin-top: 0;
@@ -1208,7 +1196,7 @@
 
 // other box style in the article
 .related-topic {
-    background: #BD1723;
+    background: #E21F26;
     border: 1px solid #DDDDDD;
     padding: 21px 30px;
 
@@ -1281,11 +1269,12 @@
     margin-top: 32px !important;
 
     .heading {
+        font-family: 'NewsreaderDisplay';
         font-weight: $font-weight-bold;
-        font-size: 21px;
-        line-height: 29px;
-        text-transform: uppercase;
-        color: #212529;
+        font-size: 32px;
+        line-height: 30px;
+        color: #D03927;
+
 
         &:hover {
             color: $primary !important;
@@ -1293,15 +1282,16 @@
     }
 
     textarea {
-        font-family: "Quicksand";
-        font-weight: $font-weight-semibold;
-        font-size: 14px;
-        line-height: 20px;
-        color: #6c757d;
         background: #ffffff;
         border: 1px solid #DEE2E6;
         width: 100%;
         padding: 12px 16px;
+
+        font-family: 'NotoSerif';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #6C757D;
     }
 
     .box-content {
@@ -1457,6 +1447,7 @@
         line-height: 165%;
         background: #e21f26;
         color: #ffffff;
+        border-radius: 6px;
     }
 
     .sub-comments {
@@ -1585,7 +1576,7 @@
         font-family: "Quicksand";
         font-size: 16px;
         line-height: 20px;
-        background: #e21f26 url(../img/arrow-down_ver2.png) center right 17px/11px no-repeat;
+        background: #E21F26 url(../img/arrow-down_ver2.png) center right 17px/11px no-repeat;
         padding: 13px 20px;
         font-weight: 600;
         text-transform: uppercase;
@@ -1593,16 +1584,17 @@
         display: flex;
         align-items: center;
         margin: 0 auto;
-        border-radius: 0;
         padding-right: 42px;
+        border-radius: 16px;
     }
 
 
     // .btn-Submit,
     .btnSubmit {
+        background: #CE2E0E;
+        border-radius: 8px;
         width: fit-content;
         height: 36px;
-        background: #e21f26;
         padding: 8px 18px;
         font-family: "Quicksand";
         font-weight: $font-weight-medium;
@@ -1665,7 +1657,7 @@
 
     .modal-header {
         height: 70px;
-        background: $primary;
+        background: #238063;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1792,7 +1784,7 @@
 
     .bg_center_scroll {
         position: relative;
-        background: $primary;
+        background: #238063;
         float: left;
         height: 5px;
     }
@@ -1804,7 +1796,7 @@
         right: 0;
         bottom: -20px;
         font: 11px arial;
-        color: $primary;
+        color: #238063;
     }
 
     .list_vote li {
@@ -1841,7 +1833,7 @@
         color: #666;
 
         label {
-            color: $primary;
+            color: #238063;
             font-weight: $font-weight-bold;
         }
     }
@@ -1851,15 +1843,13 @@
 
 .see-also {
     background: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    padding: 24px 33px;
 
     .heading {
+        font-family: 'NewsreaderDisplay';
         font-weight: $font-weight-bold;
-        font-size: 20px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: #212529;
+        font-size: 32px;
+        line-height: 30px;
+        color: #D03927;
     }
 
     .box-content {

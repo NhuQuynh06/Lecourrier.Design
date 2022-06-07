@@ -10,11 +10,12 @@ $(document).ready(function () {
 
     $('.slide-wrapper .box-content').slick({
         centerMode: true,
-        // centerPadding: '432px',
         centerPadding: '473px',
         slidesToShow: 1,
         focusOnSelect: true,
-        dots: false,
+        dots: true,
         infinite: true,
+        speed: 1000,
+        autoplay: true,
     });
 });

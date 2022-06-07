@@ -37,3 +37,31 @@
         width: 297px;
     }
 }
+
+.col-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .main-col {
+        width: 792px;
+    }
+
+    .sub-col {
+        width: 297px;
+    }
+
+    .pri-tab {
+        width: 957px;
+    }
+
+    .second-tab {
+        width: 297px;
+    }
+}
+
+.article-page {
+    .container {
+        width: 1122px !important;
+    }
+}
