@@ -21,9 +21,11 @@
 
   }
 }
+
 .no-scroll {
   overflow: hidden;
 }
+
 // main style
 body {
   font-size: 14px;
@@ -43,10 +45,10 @@ body {
       }
 
       &__heading a {
-        font-family: 'NotoSerif';
-        font-weight: $font-weight-medium;
-        font-size: 22px;
-        line-height: 150%;
+        font-family: "PlayfairDisplay";
+        font-weight: $font-weight-semibold;
+        font-size: 23px;
+        line-height: 32px;
         color: #212529;
         padding-top: 12px;
       }
@@ -55,27 +57,26 @@ body {
 
   .rank-2 {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
     .story {
-      width: calc(50% - 6px);
-      margin-top: 22px;
+      
+      
 
-      &:nth-child(-n+2) {
-        margin-top: 0;
-      }
+
 
       &__thumb {
-        height: 30vw;
+        width: 33.3%;
+        height: 23vw;
+        float: left;
+        margin-right: 12px;
       }
 
       &__heading a {
-        font-weight: $font-weight-medium;
-        font-size: 14px;
-        line-height: 22px;
-        color: #343A40;
+        font-family: 'NotoSerif';
+        font-weight: $font-weight-normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212529;
         padding-top: 8px;
       }
     }

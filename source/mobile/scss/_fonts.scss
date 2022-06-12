@@ -1,19 +1,16 @@
+// Playfair Display
+
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/Quicksand-SemiBold.ttf');
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf');
     font-weight: 600;
 }
 
+// Quicksand
 @font-face {
     font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/Quicksand-Light.ttf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/Quicksand-Bold.ttf');
-    font-weight: 700;
+    src: url('../fonts/Quicksand/Quicksand-Regular.ttf');
+    font-weight: 400;
 }
 
 @font-face {
@@ -23,11 +20,13 @@
 }
 
 @font-face {
-    font-family: 'Righteous';
-    src: url('../fonts/Righteous/Righteous-Regular.ttf');
-    font-weight: 400;
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand-Bold.ttf');
+    font-weight: 700;
 }
 
+
+// Noto Serif 
 @font-face {
     font-family: 'NotoSerif';
     src: url('../fonts/NotoSerif/NotoSerif-Regular.ttf');
@@ -42,6 +41,13 @@
 
 @font-face {
     font-family: 'NotoSerif';
-    src: url('../fonts/NotoSerif/NotoSerif-Bold.ttf');
+    src: url('../fonts/NotoSerif/NotoSerif-SemiBold.ttf');
     font-weight: 600;
+}
+
+// Newsreader-display
+@font-face {
+    font-family: 'Newsreader';
+    src: url('../fonts/Newsreader-display/newsreader-display-bold.ttf');
+    font-weight: 700;
 }
