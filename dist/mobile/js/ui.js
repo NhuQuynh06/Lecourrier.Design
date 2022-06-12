@@ -20,11 +20,51 @@ $('.search-wrapper .mask').click(function () {
 })
 
 // slick
-$('.box-tips .box-content').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    dots: true,
-});
+$(document).ready(function () {
+    $('.box-tips .box-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        dots: true,
+    });
+    $('.magazine .box-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        dots: true,
+        centerPadding: '70px',
+        centerMode: true,
+    });
+    $('.podcasts .box-content').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        dots: false,
+        centerPadding: '55px',
+        centerMode: true,
+    });
+    $('.breadcrumb').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 500,
+        swipeToSlide: true,
+        infinite: false,
+        variableWidth: true,
+        dots: false,
+        prevArrow: false,
+    });
+    $('.breadcrumb').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        mainSlider = slick;
+        if ((slick.slideCount - 1) == currentSlide) {
+            setTimeout(function () {
+                mainSlider.goTo(0);
+            }, 100);
+        }
+    });
+})
