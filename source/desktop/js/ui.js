@@ -12,21 +12,20 @@ $(document).ready(function () {
     $('.slide-wrapper .box-content').slick({
         centerMode: true,
         centerPadding: '473px',
-        // centerPadding: '320px',
         slidesToShow: 1,
         focusOnSelect: true,
         dots: true,
         infinite: true,
         speed: 1000,
         autoplay: true,
-        // responsive: [
-        //     {
-        //         breakpoint: 1366,
-        //         settings: {
-        //             centerMode: true,
-        //             centerPadding: '400px',
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '320px',
+                }
+            }
+        ]
     });
 });

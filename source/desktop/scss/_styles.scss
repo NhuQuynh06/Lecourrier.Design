@@ -971,10 +971,15 @@ body {
     position: relative;
 
     &__thumb {
-      width: 957px;
-      height: 618px;
+      width: 100%;
+      height: 518px;
       opacity: 0.4;
       transition: 0.5s;
+
+      @media (min-width: 1366px) {
+        width: 957px;
+        height: 618px;
+      }
     }
 
     &__heading a {
