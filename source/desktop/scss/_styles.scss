@@ -454,7 +454,7 @@ body {
         }
       }
 
-      .icon-longform {
+      .icon {
         width: 36px;
         height: 36px;
         border-radius: 36px;
@@ -641,7 +641,9 @@ body {
   }
 
   .heading {
-    @include heading()
+    @include heading();
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .box-content {
@@ -743,6 +745,8 @@ body {
 
     .heading {
       @include heading();
+      font-size: 50px;
+      line-height: 50px;
     }
   }
 
@@ -756,11 +760,16 @@ body {
     width: 1021px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     >* {
       width: calc(25% - 21.5px);
       margin-top: 48px;
+      margin-right: 28px;
+
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
 
       &:nth-child(-n+4) {
         margin-top: 0;
