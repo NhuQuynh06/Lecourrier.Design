@@ -2,11 +2,24 @@
     width: 24px;
     height: 24px;
     display: block;
+    font-size: 0;
 }
 
 
 .icon {
     &-search {
         background: url(../img/icon-search.png) center center/16.5px no-repeat;
+    }
+
+    &-play {
+        background: url(../img/icon-play.png) center center/24px no-repeat;
+    }
+
+    &-longform {
+        background: url(../img/icon-longform.png) center center/24px no-repeat;
+    }
+
+    &-podcast {
+        background: url(../img/icon-podcast.png) center center/28px no-repeat;
     }
 }
