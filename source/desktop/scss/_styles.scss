@@ -522,6 +522,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 23px;
+    height: 23px;
 
     .slick-active button {
       width: 16px;
@@ -969,6 +970,7 @@ body {
 
   .story {
     position: relative;
+    overflow: hidden;
 
     &__thumb {
       width: 100%;
@@ -1244,5 +1246,11 @@ body {
       color: $white;
       cursor: pointer;
     }
+  }
+}
+
+.article-page-full {
+  .container {
+    max-width: 900px !important;
   }
 }

@@ -20,6 +20,27 @@ $(document).ready(function () {
         autoplay: true,
         responsive: [
             {
+                breakpoint: 1920,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '470px',
+                }
+            },
+            {
+                breakpoint: 1600,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '400px',
+                }
+            },
+            {
+                breakpoint: 1450,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '350px',
+                }
+            },
+            {
                 breakpoint: 1366,
                 settings: {
                     centerMode: true,
@@ -29,3 +50,7 @@ $(document).ready(function () {
         ]
     });
 });
+
+$('.top-header .search-wrapper').click(function () {
+    $('.top-header .search-wrapper').addClass('active')
+})

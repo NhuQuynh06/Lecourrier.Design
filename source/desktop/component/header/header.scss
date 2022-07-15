@@ -7,6 +7,7 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
+        height: 36px;
     }
 }
 
@@ -32,12 +33,43 @@
         a {
             display: flex;
             align-items: center;
-            padding: 18px 12px;
             height: 34px;
+            padding: 18px 12px;
             transition: 0.5s;
 
             &:hover {
                 background: #fff;
+            }
+        }
+
+        input {
+            border: none;
+            height: 26px;
+            display: none;
+            text-align: right;
+
+            &::placeholder {
+                padding: 4px;
+                text-align: right;
+            }
+        }
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 7px 12px;
+
+            &:hover {
+                background: #fff;
+            }
+
+            &.active {
+                background: #fff;
+
+                input {
+                    display: block;
+                }
             }
         }
     }
